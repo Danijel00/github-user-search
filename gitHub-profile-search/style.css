@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #41327c;
+    background-image: linear-gradient(315deg, #3b2e6e 0%, #322472 74%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+input{
+    background-color: #2d1392;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+input::placeholder{
+    color: #eee;
+}
+
+input:focus{
+    outline: none;
+}
+
+.card{
+    background-color: #2e235c;/*Nasteluj*/
+    background-image: linear-gradient(315deg ,#2f1b80  0%,#3300ff  74%);    
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5), 0 15px 40px rgba(0,0,0,0.8);
+    display: flex;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+.avatar{
+    border: 10px solid #2300af;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info{
+    color: #fff;
+    margin-left: 2rem;
+}
+.user-info h2{
+    margin-top: 0;
+}
+
+.user-info ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;/*OVDE*/
+    list-style-type: none;
+    max-width: 350px;
+}
+
+.user-info ul li i{
+    margin-right: 0.3rem;
+}
+.user-info ul li strong{
+    margin-left: 0.4rem;
+}
+
+.repo{
+    background-color: #2300af;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    border: 1px solid #111;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.repo:hover{
+    transition: all 0.3s ease;
+    background-color: #000;
+}
+
+h4 i{
+    margin-left: 5px;
+}
+
+
+/* Resonsive media */
+
+@media screen and (max-width: 600px){
+    .card{
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    .avatar{
+        border: 5px solid #2300af;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+    }
+    .user-info{
+       margin:0 100px;
+       flex-wrap: wrap;
+       flex-direction: column;
+       text-align: center;
+    }
+    .user-info ul li strong{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+}
